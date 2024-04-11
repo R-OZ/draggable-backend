@@ -7,6 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // MongoDB connection
+//Note: replace with monogoDB online
 mongoose.connect('mongodb://localhost:27017/mern');
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -25,6 +26,7 @@ app.use('/api/customer', customerRoutes);
 app.use('/api/employee', employeeRoutes);
 app.use('/api/car', carRoutes);
 
+//count the number of times and API is called
 let addCount = 0;
 let updateCount = 0;
 
