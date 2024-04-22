@@ -26,7 +26,7 @@ app.use('/api/customer', customerRoutes);
 app.use('/api/employee', employeeRoutes);
 app.use('/api/car', carRoutes);
 
-//count the number of times any API is called - this was a requirment of the assessment
+//count the number of times any API is called - this was a requirement of the assessment
 let addCount = 0;
 let updateCount = 0;
 
